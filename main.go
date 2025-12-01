@@ -9,7 +9,6 @@ import (
 	"product-api/handlers"
 	"time"
 
-	// "product-api/handlers"
 	"github.com/nicholasjackson/env"
 )
 
