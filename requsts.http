@@ -5,11 +5,10 @@ POST http://localhost:9090 HTTP/1.1
 content-type: application/json
 
 {
-    "id": 0,
     "name": "Tea",
     "description": "black",
     "price": 1.90,
-    "sku": "fdfd54"
+    "sku": "fdf-dwe-qwer"
 }
 
 ### GET All items
@@ -23,5 +22,16 @@ content-type: application/json
    "name": "Latte",
     "description": "Frothy milky coffee",
     "price": 2.65,
-    "sku": "abc323"   
+    "sku": "abc-sdf-qwe"   
+}
+
+###Update an item
+PUT http://localhost:9090/2
+content-type: application/json
+
+{   
+   "name": "Espresso",
+    "description": "Short and strong coffee without milk",
+    "price": 1.99,
+    "sku": "asc-ddf-rwe"   
 }
