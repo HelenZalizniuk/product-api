@@ -7,7 +7,7 @@ import (
 )
 
 // swagger:route DELETE /products/{id} products deleteProduct
-// Update a products details
+// Delete a product
 //
 // responses:
 //	201: noContentResponse
