@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+	"product-api/client"
+	"product-api/client/products"
+	"testing"
+)
+
+func TestOurClient(t *testing.T) {
+	cfg := client.DefaultTransportConfig().WithHost("localhost:9090")
+	c := client.NewHTTPClientWithConfig(nil, cfg)
+
+	prod, err := c.Products.ListProducts(products.NewListProductsParams())
+
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	fmt.Printf("%#v", prod.GetPayload()[0])
+	t.Fail()
+}
